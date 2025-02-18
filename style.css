@@ -1,13 +1,50 @@
 body {
-    background-color: #fafafa;
-    text-align: center;
     font-family: Arial, sans-serif;
-  }
-  
-button {
-    padding: 10px 20px;
-    background-color: blue;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
     color: white;
-    border: none;
-    cursor: pointer;
-  }
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+.person {
+    background: white;
+    padding: 1em;
+    margin: 1em auto;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
