@@ -132,3 +132,23 @@ footer {
     text-align: left;
     padding-left: 20px; 
 } */
+
+.error{
+    color: #fa0400;
+    font-size: large;
+    align-self: center;
+    display: flex;
+    flex-direction: column; /* Mette il testo sopra e l'immagine sotto */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra orizzontalmente */
+    height: 100vh; /* Occupa tutta l'altezza della finestra */
+    text-align: center; 
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.error img{
+    max-width: 60%; /* Adatta l'immagine senza superare la larghezza */
+    height: auto; 
+    
+}
