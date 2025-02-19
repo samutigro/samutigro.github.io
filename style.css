@@ -1,15 +1,19 @@
+/* Updated styles for a more modern and stylish look */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #1a1a2e;
+    color: #fff;
 }
 
 header {
-    background-color: #333;
+    background: linear-gradient(135deg, #502691, #555);
     color: white;
-    padding: 1em 0;
+    padding: 1.5em 0;
     text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -17,104 +21,114 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #f8b400;
 }
 
 section {
-    padding: 2em;
+    padding: 4em;
     text-align: center;
-    flex: 1
-}
-
-.person {
-    background: white;
-    padding: 1em;
-    margin: 1em auto;
-    width: 50%;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Assicura che il corpo della pagina sia almeno dell'altezza dello schermo */
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    margin-top: auto; /* Spinge il footer in fondo solo quando il contenuto è poco */
 }
 
 .people-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colonne per la griglia */
-    column-gap: 10px; /* Spazio tra le colonne */
-    row-gap: 30px; /* Spazio tra le righe */
-    justify-items: center; /* Centra gli elementi nella griglia */
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    padding: 40px;
 }
 
 .person {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     text-align: center;
-    max-width: 250px;
+    max-width: 280px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.person:hover {
+    transform: scale(1.05);
 }
 
 .person img {
-    width: 200px; /* Grandezza immagine */
-    height: 200px;
-    object-fit: cover; /* Taglia e centra l'immagine */
-    border-radius: 50%; /* Rende l'immagine circolare */
-    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #f8b400;
 }
 
-.person h3 {
-    margin: 10px 0 5px;
-}
-
-.person p {
-    color: gray;
-    font-size: 14px;
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    font-size: 0.9em;
+    margin-top: auto;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
 }
 
 #sfondo {
-    position: fixed; /* Lo mantiene fisso sullo sfondo */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100vw; /* Copre tutta la larghezza della viewport */
-    height: 100vh; /* Copre tutta l'altezza della viewport */
-    object-fit: cover; /* Ritaglia l'immagine per adattarla */
-    opacity: 0.9;
-    z-index: -1; /* Lo mette dietro il contenuto */
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.4;
+    z-index: -1;
+    filter: blur(4px);
 }
-/*
-#sfondo {
-    width: 100%; 
-    height: auto; 
-    opacity: 0.6; 
-    position: absolute; 
-    top: 0;
-    left: 0;
-    z-index: -1; 
-} 
-*/
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px; /* Spazio tra il testo e l'immagine */
+}
+
+.about-text {
+    flex: 1; /* Occupa lo spazio disponibile sulla sinistra */
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-image img {
+    width: 400px; /* Regola la larghezza dell'immagine */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* #text_test{
+    display: flex;
+    align-items: center;  
+    justify-content: flex-start; 
+    height: 100%;
+    text-align: left;
+    padding-left: 20px; 
+} */
