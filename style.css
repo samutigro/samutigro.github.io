@@ -107,3 +107,14 @@ footer {
     opacity: 0.9;
     z-index: -1; /* Lo mette dietro il contenuto */
 }
+/*
+#sfondo {
+    width: 100%; 
+    height: auto; 
+    opacity: 0.6; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: -1; 
+} 
+*/
